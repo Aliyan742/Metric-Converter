@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length Conversion</title>
+    <link rel="stylesheet" href="length.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+       <ul>
+        <li>
+            <a href="services.html"><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="index.html"><i class="fas fa-home"></i></a>
+       </li>
+    </ul>
+    </nav>
+    <header>
+        <h1>Length Conversion</h1>
+    </header>
+    <main>
+        <label for="lengthValue">ENTER LENGTH</label>
+        <input type="number" id="lengthValue" placeholder="Enter value"required>
+
+        <select id="lengthFrom">
+            <option value="inches">Inches</option>
+            <option value="feet">Feet</option>
+            <option value="yards">Yards</option>
+            <option value="miles">Miles</option>
+        </select>
+
+        <span><b> TO </b></span>
+
+        <select id="lengthTo">
+            <option value="millimeters">Millimeters</option>
+            <option value="meters">Meters</option>
+            <option value="meters">Meters</option>
+            <option value="kilometers">Kilometers</option>
+        </select>
+
+        <button onclick="convertLength()">Convert</button>
+
+        <p id="lengthResult"></p>
+    </main>
+</body>
+</html>

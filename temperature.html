@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+    <link rel="stylesheet" href="temperature.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+         <li>
+             <a href="services.html"><i class="fa-solid fa-arrow-left"></i></a>
+             <a href="index.html"><i class="fas fa-home"></i></a>
+        </li>
+     </ul>
+     </nav>
+     <header>
+         <h1>Temperature Conversion</h1>
+     </header>
+        <main>
+        <label for="tempValue">Enter Temperature:</label>
+        <input type="number" id="tempValue" placeholder="Enter value" required>
+
+        <label for="tempUnit">Select Unit:</label>
+        <select id="tempUnit">
+            <option value="fahrenheitToCelsius">Fahrenheit to Celsius</option>
+            <option value="celsiusToFahrenheit">Celsius to Fahrenheit</option>
+        </select>
+
+        <button onclick="convertTemperature()">Convert</button>
+        
+        <p id="temperatureresult"></p>
+    </main>
+</body>
+</html>

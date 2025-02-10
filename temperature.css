@@ -1,0 +1,214 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(135deg, hsl(196, 97%, 50%), hsl(144, 98%, 49%));
+    background-size: 400% 400%;
+    animation: gradientBG 6s ease infinite;    
+    color: white;
+}
+
+/* Keyframe animation for the gradient */
+@keyframes gradientBG {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
+
+
+/* Navigation Bar */
+nav {
+    background: black;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav ul li a i{
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a i:hover {
+    border-radius: 50px;
+    background: #ffd700;
+    color: black;
+}
+
+/* Header */
+header {
+    margin-bottom: 50px;
+}
+
+h1 {
+    border: #0d0d0d 2px solid;
+    border-radius: 10px;
+    margin-bottom: 80px;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: #0d0d0d 2px 2px 10px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    padding: 14px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 0px #ff9900, 10px 10px 0px #ff6600, 15px 15px 0px #cc33;
+}
+
+/* Main Section */
+main {
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    width: 30%; /* Reduced width for a smaller container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 10px;
+}
+
+input, select {
+    font-size: 18px;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+    width: 90%; /* Adjusted width */
+    text-align: center;
+    outline: groove 2px;
+    transition: all 0.3s;
+    background: black;
+    color: white;
+}
+
+input::placeholder {
+    color: hsla(0, 0%, 100%, 0.699);
+}
+select {
+    cursor: pointer;
+    appearance: none;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: black;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    padding: 12px;
+    width: 96%;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 140, 0, 0.7);
+}
+
+select:hover {
+    background: linear-gradient(to right, #feb47b, #ff7e5f);
+}
+
+select option {
+    background: black;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+}
+
+select::after {
+    content: '\25BC';
+    font-size: 16px;
+    color: black;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Convert Button Styling */
+button{
+    align-items: center;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 4px 4px 0px #ff9900, 8px 8px 0px #ff6600, 12px 12px 0px #cc3300;
+}
+button:hover {
+    color: black;
+    background-color: white;
+    font-weight: bolder;
+    border: #0d0d0d 2px solid;
+    transform: translateY(4px);
+    box-shadow: 3px 3px 0px #ff9900, 6px 6px 0px #ff6600, 9px 9px 0px #cc3300;
+}
+button:active {
+    transform: translateY(8px);
+    box-shadow: 2px 2px 0px #ff9900, 4px 4px 0px #ff6600, 6px 6px 0px #cc3300;
+}
+
+/* Result Styling */
+#temperatureresult {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    background: black;
+    padding: 15px;
+    border-radius: 8px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.507);
+}

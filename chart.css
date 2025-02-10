@@ -1,0 +1,143 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ff00ff, #00ffff);
+    animation: gradientBG 6s ease infinite;
+    background-size: 400% 400%;
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+nav {
+    margin: 10px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 0;
+    width: 90%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    font-weight: bold;
+    color: white !important;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.952),
+    0 0 20px rgba(255, 0, 255, 0.952),
+    0 0 40px rgba(255, 0, 255, 0.952),
+    0 0 80px rgba(255, 0, 255, 0.952);
+    color: black !important;
+    background: rgba(252, 5, 207, 0.479);
+    border-radius: 5px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: white; /* Neon pink */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px black; /* Neon pink glow */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(255, 0, 255, 0.3); /* Neon pink shadow */
+}
+
+table, th, td {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 12px;
+    text-align: left;
+    color: #fff;
+    font-size: 16px;
+}
+
+th {
+    background: rgba(0, 217, 255, 0.2); /* Neon cyan */
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #131213; /* Neon cyan */
+    text-shadow: 0 0 10px #1316164d; /* Neon cyan glow */
+}
+
+td {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+tr:nth-child(even) td {
+    background: rgba(0, 217, 255, 0.1); /* Neon cyan */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    table, th, td {
+        font-size: 14px;
+    }
+}
