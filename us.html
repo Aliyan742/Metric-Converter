@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditional U.S. Units</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+/* Navbar */
+.navbar-brand{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFFFF !important;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-family: cursive;
+}
+.navbar {
+    border: black 2px solid;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    box-shadow: 0px 4px 10px rgba(28, 4, 28, 0.945);
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.navbar-nav .nav-link {
+    font-weight: bold;
+    color: white !important;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+}
+.navbar-nav .nav-link:hover {
+    color: black !important;
+    background: yellow;
+    border-radius: 20px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
+/* Responsive */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+}
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.article-header {
+    background: linear-gradient(65deg, #6a11cb, #2575fc, hsla(59, 100%, 50%, 0.677));
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 140px;
+}
+.article-header h1 {
+    font-family: popin;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0 10px 15px black;
+}
+.article-header p {
+    font-family: popin;
+    font-size: 1.2rem;
+}
+h2{
+    font-family: monospace;
+    font-weight: bolder;
+}
+/* Section Styles */
+.article-section {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.article-section:hover {
+    transform: translateY(-5px);
+}
+.section-title {
+    color: #007bff;
+    border-bottom: 3px solid #0c0912;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* List Styles */
+.list-group-item {
+    background: #f8f9fa;
+    border-left: 5px solid #007bff;
+    font-weight: 500;
+}
+
+/* Image Container */
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.img-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: black 2px solid;
+    box-shadow: 0 10px 15px black;
+}
+    </style>
+</head>
+<body>
+        <!-- Navbar Section -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                     <span>Metric <br>Converter</span>
+                    </a>
+                    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="conversionDropdown" role="button" data-bs-toggle="dropdown">
+                                <i class="fas fa-exchange-alt"></i> Conversions
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="currency.html"><i class="fa-solid fa-dollar-sign"></i> currency</a></li>
+                                <li><a class="dropdown-item" href="length.html"><i class="fas fa-ruler"></i> Length</a></li>
+                                <li><a class="dropdown-item" href="area.html"><i class="fas fa-th-large"></i> Area</a></li>
+                                <li><a class="dropdown-item" href="volume.html"><i class="fas fa-cube"></i> Volume</a></li>
+                                <li><a class="dropdown-item" href="mass.html"><i class="fas fa-weight-hanging"></i> Mass</a></li>
+                                <li><a class="dropdown-item" href="temperature.html"><i class="fas fa-thermometer-half"></i> Temperature</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="chart.html"><i class="fas fa-chart-bar"></i> Conversion Chart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="support.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <div class="container">
+        <header class="article-header">
+            <h1>Traditional U.S. Units</h1>
+            <p>Understanding the traditional system of measurement in the United States</p>
+        </header>
+
+        <section class="article-section">
+            <h2 class="section-title">Introduction</h2>
+            <p>The United States primarily uses the **Imperial system** (often referred to as U.S. customary units), which includes units such as inches, feet, yards, pounds, and gallons. This system is based on historical measurements that evolved from the British Imperial system but adapted over time to meet the needs of the American people. Although the metric system is widely used in scientific contexts, the Imperial system remains dominant in daily life in the United States.</p>
+            <div class="img-container">
+                <img class="border border-dark rounded border-2" width="400px" src="images/traditional intro.png" alt="Traditional U.S. Units">
+                <img class="border border-dark rounded border-2" width="400px" src="images/CincinnatiCustomsHouse.jpg" alt="traditional us units">
+                <img class="border border-dark rounded border-2" width="400px" src="images/Old_bess_steam_engine_1777.jpg" alt="traditional us units">
+            </div>
+        </section>
+
+        <section class="article-section">
+            <h2 class="section-title">Key Traditional U.S. Units</h2>
+            <p>The traditional U.S. units are used for length, mass, volume, temperature, and other quantities. Some of the most common traditional units include:</p>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Length:</strong> Inches (in), Feet (ft), Yards (yd), Miles (mi).</li>
+                <li class="list-group-item"><strong>Mass:</strong> Ounces (oz), Pounds (lb), Tons (ton).</li>
+                <li class="list-group-item"><strong>Volume:</strong> Fluid ounces (fl oz), Cups (cup), Pints (pt), Quarts (qt), Gallons (gal).</li>
+                <li class="list-group-item"><strong>Temperature:</strong> Fahrenheit (°F).</li>
+                <li class="list-group-item"><strong>Area:</strong> Square inches (in²), Square feet (ft²), Acres (ac).</li>
+                <li class="list-group-item"><strong>Speed:</strong> Miles per hour (mph).</li>
+            </ul>
+        </section>
+
+        <section class="article-section">
+            <h2 class="section-title">Examples of Traditional U.S. Units in Use</h2>
+            <p>Here are some practical examples of how these units are used in everyday life:</p>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Length:</strong> A person’s height might be measured in feet and inches (e.g., 5'8"). A room’s size might be measured in square feet.</li>
+                <li class="list-group-item"><strong>Mass:</strong> People commonly purchase food and other goods in pounds (e.g., a 10 lb bag of rice) or ounces (e.g., a 16 oz bottle of soda).</li>
+                <li class="list-group-item"><strong>Volume:</strong> Liquid containers such as milk cartons and soda bottles are measured in quarts, gallons, or fluid ounces. For example, a gallon of milk is a common household measurement.</li>
+                <li class="list-group-item"><strong>Temperature:</strong> Weather forecasts in the U.S. are given in degrees Fahrenheit (e.g., 70°F).</li>
+                <li class="list-group-item"><strong>Speed:</strong> Speeds on highways are measured in miles per hour (mph), such as a speed limit of 65 mph.</li>
+            </ul>
+            <div class="img-container">
+                <img class="border border-dark rounded border-2" width="300px" src="images/Measurement-in-science.png" alt="traditional us units">
+                <img class="border border-dark rounded border-2" width="400px" src="images/1610088807644.jpeg" alt="traditional us units">
+                <img class="border border-dark rounded border-2" width="400px" src="images/Units+Of+Measurement+You+Must+Know.jpg" alt="traditional us units">
+            </div>
+        </section>
+
+        <section class="article-section">
+            <h2 class="section-title">History of U.S. Traditional Units</h2>
+            <p>The roots of the traditional U.S. system can be traced back to the British Imperial system, which itself evolved from systems used in ancient Rome, medieval Europe, and even the early Islamic world. Many of these units were based on human anatomy (such as the foot, based on the size of a foot) or everyday objects (like a gallon of water). Over time, these units became more standardized in the U.S. as the country developed and grew.</p>
+            <div class="img-container">
+                <img class="border border-dark rounded border-2" width="400px" src="images/Historical-units-of-measurement-_Vitruvian_Man_Measurements.jpg" alt="traditional us units">
+                <img class="border border-dark rounded border-2" width="400px" src="images/History-of-measurements-6-320.webp" alt="traditional us units">
+                <img class="border border-dark rounded border-2" width="400px" src="images/metric-map.jpg" alt="traditional us units">
+            </div>
+        </section>
+
+        <section class="article-section">
+            <h2 class="section-title">U.S. Units vs. Metric System</h2>
+            <p>While the U.S. predominantly uses traditional units, the **metric system** is the international standard and is used for scientific and industrial purposes. The difference between the two systems lies in their structure:</p>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Metric System:</strong> Uses base units such as the meter for length, kilogram for mass, and liter for volume. It is decimal-based, making conversions between units simple (e.g., 1 kilometer = 1,000 meters).</li>
+                <li class="list-group-item"><strong>U.S. Traditional Units:</strong> Use units like inches, feet, and gallons, which are not consistently based on powers of 10. For example, there are 12 inches in a foot, 3 feet in a yard, and 16 ounces in a pound.</li>
+            </ul>
+            <div class="img-container">
+                <img class="border border-dark rounded border-2" width="400px" src="images/240_F_359407073_hdEmAmu1adJ8MITrHjeCV47wmwX8UVQ2.jpg" alt="traditional us units">
+                <img class="border border-dark rounded border-2" width="400px" src="images/240_F_644919776_jMWCAQhj9DLooINaLKVmQ9Xd9oQZeSNT.jpg" alt="traditional us units">
+                <img class="border border-dark rounded border-2" width="400px" src="images/240_F_816710674_pNAa801Cejiklz47UeRWZV2HhpzDrsg1.jpg" alt="traditional us units">
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Metric Conversion All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+

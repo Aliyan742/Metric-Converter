@@ -28,6 +28,7 @@
                             <i class="fas fa-exchange-alt"></i> Conversions
                         </a>
                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="currency.html"><i class="fa-solid fa-dollar-sign"></i> currency</a></li>
                             <li><a class="dropdown-item" href="length.html"><i class="fas fa-ruler"></i> Length</a></li>
                             <li><a class="dropdown-item" href="area.html"><i class="fas fa-th-large"></i> Area</a></li>
                             <li><a class="dropdown-item" href="volume.html"><i class="fas fa-cube"></i> Volume</a></li>
@@ -48,9 +49,57 @@
         <div class="overlay">
             <h1 class="animated-text">Welcome to Metric <br> Conversion Calculator</h1>
             <p><b>Convert Length, Area, Volume, Mass, and Temperature with ease.</b></p>
-            <a href="services.html" class="btn btn-muted btn-lg">Start Converting</a>
+            <a href="services.html" class="button-link">Start Converting</a>
         </div>
     </header>
+
+    
+
+            <!-- Article section -->
+
+            <main class="article">
+                <h1 class="text-center fw-bolder  mt-5 mb-4">Articles</h1>
+                <hr class="bg-dark">
+                <div class="ar-divs fw-bolder">
+                    <div class="col-md-12 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">The SI System</h5>
+                                <p class="card-text">An article describing what the SI system of units is...</p>
+                                <a href="SI.html" class="ar-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">The Metric System</h5>
+                                <p class="card-text">An article describing the differences between the various metric systems...</p>
+                                <a href="metric.html" class="ar-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">The Meter</h5>
+                                <p class="card-text">An article defining the meter as used in the metric system, both past and present...</p>
+                                <a href="meter.html" class="ar-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Traditional U.S. Units</h5>
+                                <p class="card-text">An article describing the traditional units of measurement used throughout the United States...</p>
+                                <a href="us.html" class="ar-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+    
 
     <!-- Features Section -->
     <section class="container text-center my-5">
@@ -80,6 +129,56 @@
             </div>
         </div>
     </section>
+
+    <!-- Frequently Asked Questions -->
+
+    <main class="Frequently">
+        <div class="FAQcontainer">
+            <div class="faq-section">
+                <h2 class="fw-bolder ">Frequently Asked Questions (FAQs)</h2>
+                <hr class="bg-dark">
+                <div class="faq">
+                    <button onclick="toggleAnswer(0)">How do I enter numbers in Scientific Notation? <i class="icon fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-content">
+                        <p>Scientific notation is a way of expressing very large or very small numbers. To enter numbers in scientific notation, use the format <strong>number * 10^exponent</strong>. For example, <strong>3.5 * 10^4</strong> represents <strong>35000</strong>.</p>
+                    </div>
+                </div>
+    
+                <div class="faq">
+                    <button onclick="toggleAnswer(1)">What is a knot? What is a nautical mile? <i class="icon fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-content">
+                        <p>A <strong>knot</strong> is a unit of speed commonly used in maritime and air navigation, equivalent to one nautical mile per hour.</p>
+                        <p>A <strong>nautical mile</strong> is a unit of distance used in navigation, defined as 1,852 meters (approximately 1.15078 miles or 1.852 kilometers).</p>
+                    </div>
+                </div>
+    
+                <div class="faq">
+                    <button onclick="toggleAnswer(2)">What about rainfall? How do I convert between inches of rain, and millimeters of rain? <i class="icon fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-content">
+                        <p>To convert inches of rainfall to millimeters, multiply by 25.4.</p>
+                        <p><strong>Formula</strong>: Inches × 25.4 = Millimeters</p>
+                    </div>
+                </div>
+    
+                <div class="faq">
+                    <button onclick="toggleAnswer(3)">What is the difference between the long ton, short ton, and metric ton? <i class="icon fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-content">
+                        <p>A <strong>long ton</strong> (also known as the imperial ton) is 2,240 pounds or approximately 1,016 kilograms.</p>
+                        <p>A <strong>short ton</strong> (commonly used in the United States) is 2,000 pounds or approximately 907.1847 kilograms.</p>
+                        <p>A <strong>metric ton</strong> (or tonne) is 1,000 kilograms or approximately 2,204.62 pounds.</p>
+                    </div>
+                </div>
+    
+                <div class="faq">
+                    <button onclick="toggleAnswer(4)">At what temperature are Celsius and Fahrenheit the same? <i class="icon fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-content">
+                        <p>The temperature at which Celsius and Fahrenheit are the same is <strong>-40°C</strong> and <strong>-40°F</strong>.</p>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+            </main>
 
     <!-- Footer Section -->
     <footer class="main pt-4">

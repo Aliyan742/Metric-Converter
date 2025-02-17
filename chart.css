@@ -9,8 +9,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #ff00ff, #00ffff);
-    animation: gradientBG 6s ease infinite;
+    background-color: white;
     background-size: 400% 400%;
     color: #fff;
     text-align: center;
@@ -20,22 +19,16 @@ body {
     align-items: center;
     justify-content: center;
 }
-@keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
 
 nav {
     margin: 10px;
-    border-radius: 8px;
-    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    background: rgba(36, 3, 249, 0.963);
     padding: 15px 0;
     width: 90%;
     top: 0;
     left: 0;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
     z-index: 1000;
 }
 
@@ -62,24 +55,19 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    box-shadow: 0 0 10px rgba(255, 0, 255, 0.952),
-    0 0 20px rgba(255, 0, 255, 0.952),
-    0 0 40px rgba(255, 0, 255, 0.952),
-    0 0 80px rgba(255, 0, 255, 0.952);
     color: black !important;
-    background: rgba(252, 5, 207, 0.479);
-    border-radius: 5px;
+    background: yellow;
+    border-radius: 10px;
 }
 
 .container {
     width: 90%;
     max-width: 1000px;
     margin-top: 100px;
-    background: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(65deg, #6a11cb, #2575fc, hsla(59, 100%, 50%, 0.677));
     padding: 30px;
+    box-shadow: 0 10px 15px black;
     border-radius: 15px;
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(20px);
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -91,10 +79,10 @@ nav ul li a:hover {
 h1 {
     margin-bottom: 20px;
     font-size: 36px;
-    color: white; /* Neon pink */
+    color: white; 
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 0 0 10px black; /* Neon pink glow */
+    text-shadow: 0 0 10px black;
 }
 
 table {
@@ -103,11 +91,11 @@ table {
     margin-top: 20px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0px 0px 15px rgba(255, 0, 255, 0.3); /* Neon pink shadow */
+    box-shadow: 0px 0px 15px rgba(21, 18, 21, 0.96); 
 }
 
 table, th, td {
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(21, 19, 19, 0.938);
     padding: 12px;
     text-align: left;
     color: #fff;
@@ -115,20 +103,20 @@ table, th, td {
 }
 
 th {
-    background: rgba(0, 217, 255, 0.2); /* Neon cyan */
+    background: rgba(0, 255, 42, 0.977); 
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bold;
-    color: #131213; /* Neon cyan */
-    text-shadow: 0 0 10px #1316164d; /* Neon cyan glow */
+    color: #131213; 
+    text-shadow: 0 0 10px #1316164d;
 }
 
 td {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(157, 170, 68, 0.827);
 }
 
 tr:nth-child(even) td {
-    background: rgba(0, 217, 255, 0.1); /* Neon cyan */
+    background: rgba(4, 0, 255, 0.29); 
 }
 
 @media (max-width: 768px) {

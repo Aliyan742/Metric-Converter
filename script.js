@@ -1,3 +1,31 @@
+//THIS CODE FOR CURRENCY CONVERTER
+
+function convertCurrency() {
+    let amount = parseFloat(document.getElementById("amount").value);
+    let fromCurrency = document.getElementById("fromCurrency").value;
+    let toCurrency = document.getElementById("toCurrency").value;
+    let currencyresultElement = document.getElementById("currencyresult");
+
+    // Currency conversion rates (example rates, real-world app may use API)
+    let conversionRates = {
+        "USD": { "PKR": 280, "EUR": 0.91, "GBP": 0.76, "USD": 1 },
+        "PKR": { "USD": 0.0036, "EUR": 0.0033, "GBP": 0.0027, "PKR": 1 },
+        "EUR": { "USD": 1.10, "PKR": 305, "GBP": 0.84, "EUR": 1 },
+        "GBP": { "USD": 1.32, "PKR": 360, "EUR": 1.19, "GBP": 1 }
+    };
+
+    if (isNaN(amount) || amount <= 0) {
+        currencyresultElement.innerHTML = "Please enter a valid amount!";
+        return;
+    }
+
+    let convertedAmount = amount * conversionRates[fromCurrency][toCurrency];
+
+    // **Result show in the same format as temperature conversion**
+    currencyresultElement.innerHTML = `Converted Value: ${convertedAmount.toFixed(2)} ${toCurrency}`;
+}
+
+
 // THIS CODE FOR TEMPERATURE CONVERTER
 
 function convertTemperature() {
@@ -105,7 +133,6 @@ function convertVolume() {
             return;
     }
 
-    // ✅ Corrected string interpolation with backticks
     volumeresult.innerHTML = `Converted Value: ${convertedValue.toFixed(2)} ${unitText}`;
 }
 
@@ -142,7 +169,6 @@ function convertArea() {
             return;
     }
 
-    // ✅ Corrected string interpolation with backticks
     areaResult.innerHTML = `Converted Value: ${convertedValue.toFixed(2)} ${unitText}`;
 }
 
@@ -188,5 +214,17 @@ function convertLength() {
         document.getElementById("lengthResult").innerText = `Converted Value: ${result.toFixed(4)} ${to}`;
     } else {
         document.getElementById("lengthResult").innerText = "Invalid Conversion!";
+    }
+}
+
+
+// frequently asked questions
+
+function toggleAnswer(index) {
+    var faqContents = document.getElementsByClassName("faq-content");
+    if (faqContents[index].style.display === "block") {
+        faqContents[index].style.display = "none";
+    } else {
+        faqContents[index].style.display = "block";
     }
 }

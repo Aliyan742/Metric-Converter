@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Metric System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+/* Navbar */
+.navbar-brand{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFFFF !important;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-family: cursive;
+}
+.navbar {
+    border: black 2px solid;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    box-shadow: 0px 4px 10px rgba(28, 4, 28, 0.945);
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.navbar-nav .nav-link {
+    font-weight: bold;
+    color: white !important;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+}
+.navbar-nav .nav-link:hover {
+    color: black !important;
+    background: yellow;
+    border-radius: 20px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
+/* Responsive */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+}
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.article-header {
+    background: linear-gradient(65deg, #6a11cb, #2575fc, hsla(59, 100%, 50%, 0.677));
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 140px;
+}
+.article-header h1 {
+    font-family: popin;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0 10px 15px black;
+}
+.article-header p {
+    font-family: popin;
+    font-size: 1.2rem;
+}
+h2{
+    font-family: monospace;
+    font-weight: bolder;
+}
+/* Section Styles */
+.article-section {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.article-section:hover {
+    transform: translateY(-5px);
+}
+.section-title {
+    color: #007bff;
+    border-bottom: 3px solid #0c0912;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* List Styles */
+.list-group-item {
+    background: #f8f9fa;
+    border-left: 5px solid #007bff;
+    font-weight: 500;
+}
+
+/* Image Container */
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.img-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: black 2px solid;
+    box-shadow: 0 10px 15px black;
+}
+    </style>
+</head>
+<body>
+     <!-- Navbar Section -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                 <span>Metric <br>Converter</span>
+                </a>
+                
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="conversionDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-exchange-alt"></i> Conversions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="currency.html"><i class="fa-solid fa-dollar-sign"></i> currency</a></li>
+                            <li><a class="dropdown-item" href="length.html"><i class="fas fa-ruler"></i> Length</a></li>
+                            <li><a class="dropdown-item" href="area.html"><i class="fas fa-th-large"></i> Area</a></li>
+                            <li><a class="dropdown-item" href="volume.html"><i class="fas fa-cube"></i> Volume</a></li>
+                            <li><a class="dropdown-item" href="mass.html"><i class="fas fa-weight-hanging"></i> Mass</a></li>
+                            <li><a class="dropdown-item" href="temperature.html"><i class="fas fa-thermometer-half"></i> Temperature</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="chart.html"><i class="fas fa-chart-bar"></i> Conversion Chart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="support.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="article-header">
+            <h1>The Metric System</h1>
+            <p>The standard system of measurement used globally</p>
+        </header>
+    
+        <section class="article-section">
+            <h2 class="section-title">Introduction</h2>
+            <p>The <strong>metric system</strong> is a decimal-based system of measurement that was first developed in France during the late 18th century. It is the standard system used in most of the world for scientific, industrial, and everyday purposes. Unlike traditional measurement systems that were based on arbitrary constants (such as the length of a king's foot), the metric system was designed to be logical and standardized. It uses multiples of 10 for conversion, making it easier to convert between units.</p>
+            <div class="img-container">
+            <img class="border border-dark rounded border-2" width="400px" src="images/FourMetricInstruments.JPG" alt="traditional us units">
+            <img class="border border-dark rounded border-2" width="400px" src="images/James_Clerk_Maxwell.jpg" alt="traditional us units">
+            <img class="border border-dark rounded border-2" width="400px" src="images/Metric-system-1-320.webp" alt="traditional us units">
+            </div>
+        </section>
+    
+        <section class="article-section">
+            <h2 class="section-title">Key Features of the Metric System</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Decimal-Based:</strong> The system is based on powers of 10, simplifying conversion between units. For example, 1 kilometer equals 1,000 meters.</li>
+                <li class="list-group-item"><strong>Standardized Units:</strong> The metric system uses standardized base units such as meter, kilogram, and second, which are consistent worldwide.</li>
+                <li class="list-group-item"><strong>Prefix System:</strong> Metric prefixes like kilo- (k), centi- (c), and milli- (m) represent multiples and submultiples of the base units, making conversions straightforward.</li>
+            </ul>
+        </section>
+    
+        <section class="article-section">
+            <h2 class="section-title">The Base Units of the Metric System</h2>
+            <p>The metric system uses several base units to measure different quantities. These include:</p>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Meter (m):</strong> The base unit of length, used to measure distance or size.</li>
+                <li class="list-group-item"><strong>Kilogram (kg):</strong> The base unit of mass, used to measure the amount of matter in an object.</li>
+                <li class="list-group-item"><strong>Second (s):</strong> The base unit of time, used to measure the duration of events.</li>
+                <li class="list-group-item"><strong>Ampere (A):</strong> The base unit of electric current, used to measure the flow of electric charge.</li>
+                <li class="list-group-item"><strong>Kelvin (K):</strong> The base unit of temperature, used to measure thermal energy.</li>
+                <li class="list-group-item"><strong>Mole (mol):</strong> The base unit of amount of substance, used to measure the number of particles in a sample.</li>
+                <li class="list-group-item"><strong>Candela (cd):</strong> The base unit of luminous intensity, used to measure the brightness of light emitted from a source.</li>
+            </ul>
+        </section>
+    
+        <section class="article-section">
+            <h2 class="section-title">History of the Metric System</h2>
+            <p>The metric system was introduced in France during the late 18th century, during the French Revolution. The goal was to create a system of measurement that was universal, logical, and based on scientific principles. Before the metric system, measurements were often based on local standards or the size of the ruler used by the monarch. The metric system solved this by creating consistent, reproducible units of measurement based on natural phenomena, such as the length of the Earth's meridian and the mass of a liter of water.</p>
+            <p>The system was gradually adopted by other countries and evolved over time. It became more formalized in the 19th and 20th centuries, with the establishment of the International System of Units (SI) in 1960. The SI system standardized the metric system and provided precise definitions for the units, based on physical constants.</p>
+            <div class="img-container">
+            <img class="border border-dark rounded border-2" width="400px" src="images/Watt_James_von_Breda.jpg" alt="traditional us units">
+            <img class="border border-dark rounded border-2" width="400px" src="images/Joule's_Apparatus_(Harper's_Scan).png" alt="traditional us units">
+            <img class="border border-dark rounded border-2" width="400px" src="images/Nicolas_de_Condorcet.PNG" alt="traditional us units">
+            </div>
+        </section>
+    
+        <footer>
+            <p>&copy; 2025 Metric Conversion All Rights Reserved.</p>
+        </footer>
+    </div>
+    
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
