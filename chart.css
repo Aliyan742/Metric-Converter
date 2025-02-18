@@ -57,7 +57,7 @@ nav ul li a {
 nav ul li a:hover {
     color: black !important;
     background: yellow;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .container {
