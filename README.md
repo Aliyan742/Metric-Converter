@@ -96,6 +96,4 @@ Ek conversion chart ka page bhi hai, jisme har unit ka multiplying factor dikhay
 ⿥ chart.html me jaake sab multiplying factors dekh sakte ho
 
 
----
 
-Agar tumhe koi aur detailed explanation chahiye ya kisi cheez me confusion hai, to batao bhai, me help karne ke liye yahan ho!
