@@ -10,8 +10,6 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: white;
     color: #333;
-    background-size: 400% 400%;
-    animation: gradientBG 6s ease infinite;
 }
 
 /* Navbar */
@@ -48,16 +46,22 @@ body {
 }
 
 /* Responsive Navbar */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .navbar-nav {
-        flex-direction: column;
         text-align: center;
     }
-    .navbar-nav .nav-item {
-        margin-bottom: 10px;
-    }
     .navbar-brand {
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+}
+/* Responsive */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-link {
+        font-size: 12px;
+        width: 150px;
     }
 }
 
@@ -145,13 +149,11 @@ body {
 @media (max-width: 768px) {
     .text {
         font-size: 1.5rem;
-        margin-top: 50px;
-    }
-    .conversion-box {
-        padding: 1.2rem;
+        margin-top: 120px;
     }
     .conversion-box .btn {
-        width: 90%;
+        font-size: 1.5rem;
+        width: 50%;
         max-width: none;
     }
 }
