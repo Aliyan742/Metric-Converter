@@ -7,11 +7,11 @@
 
 /* Body background with a gradient */
 body {
+    background-size: 400% 400%;
     font-family: 'Poppins', sans-serif;
     background-color: white;
     color: #333;
 }
-
 /* Navbar */
 .navbar-brand {
     font-size: 1.5rem;
@@ -80,7 +80,7 @@ body {
 
 /* Conversion Box Styling */
 .conversion-box {
-    background: linear-gradient(65deg, #6a11cb, #2575fc, hsla(59, 100%, 50%, 0.677));
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     padding: 2rem;

@@ -13,7 +13,7 @@ body {
     text-align: center;
     background: linear-gradient(135deg, hsl(69, 97%, 50%), hsl(144, 98%, 49%));
     background-size: 400% 400%;
-    animation: gradientBG 6s ease infinite;    
+    animation: gradientBG 2s ease infinite;    
     color: white;
 }
 
