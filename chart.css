@@ -85,7 +85,7 @@ nav ul li a:hover {
     width: 90%;
     max-width: 1000px;
     margin-top: 100px;
-    background: linear-gradient(65deg, #6a11cb, #2575fc, hsla(59, 100%, 50%, 0.677));
+    background: linear-gradient(65deg, #007BFF, #2575fc);
     padding: 30px;
     box-shadow: 0 10px 15px black;
     border-radius: 15px;
@@ -133,11 +133,13 @@ th {
 }
 
 td {
-    background: rgba(157, 170, 68, 0.827);
+    background: rgba(37, 38, 32, 0.827);
 }
 
 tr:nth-child(even) td {
-    background: rgba(4, 0, 255, 0.29); 
+    background: rgba(0, 179, 255, 0.788);
+    color: black;
+    font-weight: bolder; 
 }
 
 @media (max-width: 768px) {

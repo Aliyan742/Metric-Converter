@@ -79,7 +79,6 @@ body {
     font-weight: bold;
     color: black;
     text-transform: uppercase;
-    /* text-shadow: 2px 2px 4px black, -2px -2px 4px rgb(12, 11, 11); */
     text-shadow: 0 10px 15px black;
     
 }
@@ -149,7 +148,7 @@ body {
     margin: 10px;
 }
 .article .ar-divs .card{
-    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    background: linear-gradient(45deg, #007BFF, #2575fc);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 20px;
@@ -181,25 +180,6 @@ body {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* features */
-header div .btn{
-    border: black 2px solid;
-    font-weight: bolder;
-    background-color: #ff00ff;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 4px 4px 0px #00ffff, 8px 8px 0px #ff00ff;
-}
-header div .btn:hover {
-    background-color: transparent;
-    color: black;
-    border: 2px solid #00ffff;
-    transform: translateY(4px);
-}
 /* FAQ */
 .FAQcontainer {
     width: 95%;
@@ -211,7 +191,7 @@ header div .btn:hover {
     justify-content: flex-end;
 }
 .faq-section {
-    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    background: linear-gradient(45deg, #007BFF, #2575fc);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -229,7 +209,7 @@ header div .btn:hover {
     width: 100%;
     padding: 15px;
     text-align: left;
-    background-color: #007BFF;
+    background-color: #0056b3;
     color: white;
     border: none;
     border-radius: 5px;
@@ -239,7 +219,7 @@ header div .btn:hover {
     font-family: popin;
 }
 .faq button:hover {
-    background-color: #0056b3;
+    background-color: #020a12;
 }
 .faq-content {
     padding: 15px;
@@ -254,11 +234,11 @@ header div .btn:hover {
 .feature-box {
     border: black 2px solid;
     color: white;
-    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    background: linear-gradient(45deg, #007BFF, #2575fc);
     padding: 15px;
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
-    box-shadow: 4px 4px 0px #f2ff00, 8px 8px 0px #4400ff;
+    box-shadow: 4px 4px 0px white, 8px 8px 0px #4400ff;
     margin: 10px;
 }
 .feature-box:hover {
